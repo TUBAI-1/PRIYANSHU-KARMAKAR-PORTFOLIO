@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Priyanshu Karmakar's Portfolio Website",
   "main": "server/index.js",
+  "homepage": ".",
   "scripts": {
     "start": "npm run build && npm run server",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm run dev",
     "client": "cd client && npm start",
-    "build": "cd client && npm run build",
+    "build": "cd client && npm install && npm run build",
     "install-all": "npm install && cd server && npm install && cd ../client && npm install"
   },
   "keywords": ["portfolio", "react", "nodejs", "priyanshu-karmakar"],
